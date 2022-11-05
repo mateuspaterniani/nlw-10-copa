@@ -25,6 +25,26 @@ body.green {
   --bg: url(./assets/bg-green.svg);
 }
 
+
+#color {
+  margin-bottom: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid var(--card-primary);
+  background-color: var(--card-bg-color);
+  color: white
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  gap: 20px;
+}
+
+
+
 ul {
   list-style: none;
 }
@@ -37,18 +57,40 @@ body {
   background-size: cover; pode ser dessa forma*/
 
   background: #121214 var(--bg) no-repeat top center/cover;
+  transition: background 5s ease;
 }
 
 body * {
   font-family: "Roboto", sans-serif;
 }
 
+.center p {
+  font-size: 20px;
+  color: var(--card-primary);
+}
+
+
+.center .icons {
+  display: flex;
+  gap: 20px;
+}
+
+.center .icons a:hover,
+.center .icons a {
+  color: var(--card-primary);
+  text-decoration: none;
+  font-size: 25px;
+}
+
 #app {
   width: fit-content;
   margin: auto;
   padding-top: 52px;
+  margin-bottom: 40px;
 }
-
+#app #cards {
+  margin-bottom: 20px;
+}
 header {
   margin-bottom: 63px;
   text-align: center;

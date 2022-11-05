@@ -21,6 +21,27 @@ function createCard(date, day, games) {
   `
 }
 
+
+document.getElementById("color").onclick = function () {
+  var body = document.getElementsByTagName("body")[0]
+  var color = body.getAttribute("class")
+
+  if (color === "yellow") {
+    body.classList.remove("yellow")
+    body.classList.add("blue")
+  } else if (color === "blue") {
+    body.classList.remove("blue")
+    body.classList.add("green")
+  } else if (color === "green") {
+    body.classList.remove("green")
+    body.classList.add("red")
+  } else if (color === "red") {
+    body.classList.remove("red")
+    body.classList.add("yellow")
+  }
+}
+
+
 document.querySelector("#cards").innerHTML =
   createCard(
     "24/11",
